@@ -1,9 +1,9 @@
-const core = require('@actions/core');
-const core = require('@actions/github');
-const core = require('@actions/exec');
+import { notice } from '@actions/core';
+import core from '@actions/github';
+import core from '@actions/exec';
 
 function run() {
-  core.notice('Hello from my custom JavaScript Action!');
+  notice('Hello from my custom JavaScript Action!');
 }
 
 run();
